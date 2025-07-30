@@ -40,7 +40,7 @@ def generate_launch_description():
         arguments=['-d', rviz_config_file],
         parameters=[{'use_sim_time': use_sim_time}]
     )
-    
+   
 
     # Return launch description
     return LaunchDescription([
@@ -50,5 +50,5 @@ def generate_launch_description():
             description='Use sim time if true'),
 
         robot_state_publisher_node,
-        rviz_node
+        rviz_node,
     ])
